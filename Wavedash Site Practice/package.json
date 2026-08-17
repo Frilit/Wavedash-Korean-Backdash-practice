@@ -1,0 +1,49 @@
+{
+  "name": "tekken-movement-trainer",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@11.19.0",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "vinext dev",
+    "build": "vite build",
+    "preview": "node .output/server/index.mjs",
+    "start": "node .output/server/index.mjs",
+    "test": "tsx --test tests/movement.test.ts tests/model.test.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .output --ignore-pattern .next --ignore-pattern .vinext"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.8",
+    "@react-three/fiber": "^9.7.0",
+    "lucide-react": "^1.31.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "three": "^0.185.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.4",
+    "@next/eslint-plugin-next": "16.2.6",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@types/three": "^0.185.4",
+    "@vitejs/plugin-react": "6.0.2",
+    "@vitejs/plugin-rsc": "0.5.26",
+    "eslint": "9.39.4",
+    "eslint-plugin-jsx-a11y": "6.10.2",
+    "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "globals": "16.4.0",
+    "nitro": "3.0.260603-beta",
+    "react-server-dom-webpack": "19.2.6",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.59.3",
+    "tsx": "4.21.0",
+    "vinext": "1.0.0-beta.2",
+    "vite": "8.0.13"
+  },
+  "type": "module"
+}
