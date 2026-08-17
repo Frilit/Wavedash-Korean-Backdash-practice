@@ -13,13 +13,13 @@ export async function generateMetadata(): Promise<Metadata> {
   const base = new URL(`${protocol}://${host}`);
   const title = "Tekken Movement Trainer — Wavedash & KBD Practice";
   const description = "Practice Korean backdash and Mishima-style wavedash timing with safe, browser-observed keyboard and gamepad input.";
-  const socialImage = new URL("/og.png", base).toString();
+  const socialImage = new URL("/thumbnail.jpg", base).toString();
   return {
     metadataBase: base,
     title,
     description,
-    icons: { icon: "/og.png" },
-    openGraph: { title, description, type: "website", url: base, images: [{ url: socialImage, width: 1536, height: 1024, alt: "Tekken movement practice trainer" }] },
+    icons: { icon: "/thumbnail.jpg" },
+    openGraph: { title, description, type: "website", url: base, images: [{ url: socialImage, width: 611, height: 500, alt: "Absolute Dorya" }] },
     twitter: { card: "summary_large_image", title, description, images: [socialImage] },
   };
 }

@@ -1,0 +1,50 @@
+# dependencies
+/node_modules/
+/.pnpm-store/
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage/
+
+# framework and build output
+/.next/
+/.vinext/
+/.vite/
+/.output/
+/out/
+/dist/
+/build/
+/.wrangler/
+
+# local development artifacts
+/artifacts/
+/outputs/
+/work/
+
+# environment files and secrets
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.pem
+*.tsbuildinfo
+/.vercel/
